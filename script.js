@@ -1,19 +1,17 @@
-const createGameCanvas = () => 
+window.onload = gameCanvas;
+const gameCanvas () 
 {
-  let numID = 1;
-  for (let i = 0; i<20; i++)
-    for (let j = 1; j<200; j++)
-    {
-      const char = document.createElement("p");
-      char.setAttribute("id", numID);
-      const charID = document.getElementById(numID);
-      charID.innerHTML = "#";
-      document.body.appendChild(charID);
-      document.body.appendChild(br);
-      
-      numID++;
-    }
-  }
-}
+   const textSize = "20";
+   const width = Math.ceil(window.innerWidth/textSize);
+   const height = Math.ceil(window.innerHeight/textSize);
 
-createGameCanvas();
+   for (let y = 1; y<height; y++)
+   {
+     for (x = 1; x<width; x++)
+     {
+       const ptxt = document.createElement("p");
+       ptxt.setAttribute("id", "p);
+       ptxt.setAttribute("class", "box");
+     }
+   }
+}
