@@ -9,9 +9,15 @@ const gameCanvas ()
    {
      for (x = 1; x<width; x++)
      {
-       const ptxt = document.createElement("p");
-       ptxt.setAttribute("id", "p);
-       ptxt.setAttribute("class", "box");
+       const ctxt = document.createElement("p");
+       const cdiv = document.createElement("div");
+       ctxt.setAttribute("id", x+"."+y);
+       ctxt.setAttribute("class", "box");
+       cdiv.style.width = textSize;
+       cdiv.style.height = textSize;
+       document.cdiv.appendChild(ctxt);
      }
+      const br = document.createElement("br");
+      document.body.appendChild(br);
    }
 }
